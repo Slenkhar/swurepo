@@ -68,7 +68,8 @@ body{
 }
 
 .main-nav li {
-    border-left: 2px solid whitesmoke;
+    /* border-left: 2px solid whitesmoke; */
+    box-shadow: 3px 3px darkred;
     padding: 1em;
     margin: 0 0.2em;
 }
