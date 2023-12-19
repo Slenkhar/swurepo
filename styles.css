@@ -70,7 +70,7 @@ body{
 .main-nav li {
     /* border-left: 2px solid whitesmoke; */
     box-shadow: 3px 3px darkred;
-    padding: 1em;
+    padding: 0.5em;
     margin: 0 0.2em;
 }
 
