@@ -57,8 +57,9 @@ body{
     height: 15vh;
     background-color: #e71b22;
     font-weight: 700;
+    font-size: 1em;
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 .main-nav ul {
     display: flex;
@@ -66,13 +67,16 @@ body{
     list-style: none;
     justify-content: end;
     align-items: center;
+    flex-grow: 1;
 
 }
 
 .main-nav li {
+    
     box-shadow: 3px 3px darkred;
     padding: 8px;
     margin: 3px;
+    text-align: center;
 }
 
 .main-nav li:hover{
@@ -88,11 +92,11 @@ body{
 }
 
  /* WELCOME BANNER */
-
-/* #intro {
+/*
+ #intro {
     display: flex;
     height: calc(100vh - 10vw);
-    margin-top: 10vw;
+    /* margin-top: 10vw; 
   
   }
 
@@ -112,13 +116,14 @@ body{
   color: whitesmoke;
 }
 #intro h1 {
-  flex: 3 3;
+  flex:;
   font-size: clamp(2.2vw, 2.8vw, 3vw);
   background-color: #1B105B;
   text-transform: uppercase;
   color: #FBA509;
   text-align: center;
   line-height: 100px;
+  min-width: 400px;
 }
 #intro hr{
   border: 5px solid red;
