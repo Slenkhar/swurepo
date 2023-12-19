@@ -38,3 +38,52 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
+
+
+body{
+    background-image: url(/assets/images/background.jpg);
+    font-family: Oswald;
+  }
+
+
+  /* TOP NAV */
+
+.main-nav {
+    width: 100%;
+    height: 4rem;
+    background-color: #e71b22;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.main-nav li {
+    border-left: 2px solid whitesmoke;
+    padding: 1em;
+    margin: 0 0.2em;
+}
+
+.main-nav li:hover{
+    background-color: #b3151a;
+    transform: scale(1.1);
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+
+
+#intro {
+    display: grid;
+    color: whitesmoke;
+    grid-template-columns: 3fr 1fr;
+  }
