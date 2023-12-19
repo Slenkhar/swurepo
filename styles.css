@@ -58,6 +58,7 @@ body{
     background-color: #e71b22;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 10px 0;
 }
 .main-nav ul {
     display: flex;
