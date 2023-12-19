@@ -60,6 +60,7 @@ body{
 }
 .main-nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: flex-end;
     align-items: center;
@@ -86,8 +87,9 @@ body{
 /* WELCOME BANNER */
 
 #intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
     /* gap: 1.5vw; */
     height: calc(100vh - 10vw);
     margin-top: 10vw;
@@ -96,9 +98,11 @@ body{
 
 #intro p, h1 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 5%;
+    width: 100%;
 }
 
 #intro p {
@@ -124,4 +128,14 @@ body{
 
   #howtoplay {
     background-color: green;
+  }
+
+
+  /* MEDIA QUERIES */
+
+  @media screen and (max-width: 760px) {
+    
+    #intro{
+      flex-wrap: wrap;
+    }
   }
