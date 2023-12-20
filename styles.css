@@ -49,17 +49,15 @@ body{
 
   /* TOP NAV */
 
-.main-nav ul{
-    /* position: fixed; */
-    width: 100%;
-    padding: 2vw;
-    background-color: #e71b22;
-}
 .main-nav ul {
+    /* position: fixed; */
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: flex-end;
+    width: 100%;
+    padding: 2vw;
+    background-color: #e71b22;
     
 }
 
@@ -67,13 +65,11 @@ body{
   
     margin-left: 2vw;
     padding: 2vw;
-    /* padding: 1vw; */
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 2px;
     box-shadow: 5px 5px 5px #b3151a;
     text-align: center;
-    /* justify-content: center; */
     
 }
 
@@ -85,7 +81,7 @@ body{
 
 .main-nav a{
     text-decoration: none;
-    color: whitesmoke;
+    color: #fffce1;
 
 }
 
