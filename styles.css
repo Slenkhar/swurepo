@@ -57,12 +57,14 @@ body{
 }
 .main-nav ul {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     list-style: none;
+    justify-content: flex-end;
     
 }
 
 .main-nav li {
+  
     margin-left: 1vw;
     padding: 1vw;
     /* padding: 1vw; */
@@ -71,6 +73,8 @@ body{
     border-radius: 2px;
     box-shadow: 5px 5px 5px #b3151a;
     text-align: center;
+    /* justify-content: center; */
+    
 }
 
 .main-nav li:hover{
