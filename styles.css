@@ -22,10 +22,10 @@
   /*
     5. Improve media defaults
   */
-  img, picture, video, canvas, svg {
+  /* img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  }
+  } */
   /*
     6. Remove built-in form typography styles
   */
@@ -42,7 +42,7 @@
 
 body{
     background-image: url(/assets/images/background.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     font-family: Oswald;
   }
 
@@ -86,6 +86,41 @@ body{
 }
 
  /* WELCOME BANNER */
+
+#intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  height: 100vh;
+  place-items: center center;
+}
+
+
+#intro h1 {
+  color: #fffce1;
+  background-color: #1B105B;
+  font-size: clamp(1.88rem, 4vw, 4.5vw);
+  text-align: center;
+}
+
+#intro p {
+  color: #fffce1;
+  background-color: #0E063D;
+  font-size: clamp(1.88rem, 4vw, 4.5vw);
+}
+
+#howtoplay {
+  background-color: green;
+  color: #fffce1;
+}
+
+
+@media screen and (min-width: 768px) {
+  
+
+
+
+
+
 /*
  #intro {
     display: flex;
