@@ -50,7 +50,7 @@ body{
   /* TOP NAV */
 
 .main-nav ul {
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -87,13 +87,15 @@ body{
 
  /* WELCOME BANNER */
 
-#intro {
+ #intro {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   height: 100vh;
-  place-items: center center;
 }
-
+#intro > * {
+    display: grid;
+    place-items: center;
+}
 
 #intro h1 {
   color: #fffce1;
@@ -112,9 +114,6 @@ body{
   background-color: green;
   color: #fffce1;
 }
-
-
-@media screen and (min-width: 768px) {
   
 
 
