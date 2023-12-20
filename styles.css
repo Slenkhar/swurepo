@@ -50,7 +50,7 @@ body{
   /* TOP NAV */
 
 .main-nav ul {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-wrap: wrap;
     list-style: none;
