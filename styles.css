@@ -48,23 +48,32 @@ body{
 
 
   /* TOP NAV */
+.fixednav {
+  position: fixed;
+  width: 100%;
+}
 
+  header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #e71b22;
+    height: calc(120px - 1vw);
+  }
 .main-nav ul {
-    /* position: fixed; */
+  width: 100%;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: flex-end;
-    width: 100%;
-    padding: 2vw;
-    background-color: #e71b22;
+    padding: 0;
     
 }
 
 .main-nav li {
-  
-    margin-left: 2vw;
-    padding: 2vw;
+    margin: 1.5vw;
+    padding: calc(5px + 0.8vw);
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 2px;
@@ -88,6 +97,7 @@ body{
  /* WELCOME BANNER */
 
  #intro {
+  padding-top: calc(120px - 1vw);;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   height: 100vh;
@@ -102,12 +112,16 @@ body{
   background-color: #1B105B;
   font-size: clamp(1.88rem, 4vw, 4.5vw);
   text-align: center;
+  text-shadow: 2px 2px 5px #EB212E;
 }
 
 #intro p {
   color: #fffce1;
   background-color: #0E063D;
   font-size: clamp(1.88rem, 4vw, 4.5vw);
+  padding: 0 calc(34px - 1vw) 0;
+  text-align: center;
+  text-shadow: 2px 2px 3px #15f2fd;
 }
 
 #howtoplay {
