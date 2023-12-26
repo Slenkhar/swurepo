@@ -46,6 +46,9 @@ body{
     font-family: Oswald;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
 
   /* TOP NAV */
 .fixednav {
@@ -112,7 +115,7 @@ body{
   background-color: #1B105B;
   font-size: clamp(1.88rem, 4vw, 4.5vw);
   text-align: center;
-  text-shadow: 2px 2px 5px #EB212E;
+  text-shadow: 2px 2px 5px #23080a;
 }
 
 #intro p {
@@ -124,15 +127,40 @@ body{
   text-shadow: 2px 2px 3px #15f2fd;
 }
 
+
 #howtoplay {
-  background-color: green;
-  color: #fffce1;
+  height: calc(100vh - calc(120px - 1vw));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
-  
 
+#howtoplay > * {
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+}
 
+#howtoplay h2{
+  color: #fffce1;
+  background-color: #e71b22;
+  font-size: clamp(3rem, 4vw, 4.5vw);
 
+}
 
+#howtoplay a{
+  grid-template-columns: 1fr 1fr;
+  background: #b3151a;
+  /* background-image: url("/assets/images/howtothumb.jpg");
+  background-size: contain;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center; */
+  margin: 7%;
+  text-decoration: none;
+  color: #fffce1;
+  font-size: clamp(3rem, 4vw, 4.5vw);
+  border-radius: 5%;
+}
 
 /*
  #intro {
