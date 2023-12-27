@@ -117,7 +117,7 @@ body{
   background-color: #1B105B;
   font-size: clamp(1.88rem, 4vw, 4.5vw);
   text-align: center;
-  text-shadow: 2px 2px 5px #23080a;
+  text-shadow: 2px 2px 5px #e71b22;
 }
 
 #intro p {
@@ -129,16 +129,17 @@ body{
   text-shadow: 2px 2px 3px #15f2fd;
 }
 
-
 #howtoplay {
   height: calc(100dvh - calc(120px - 1vw));
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  /* justify-content: center; use if larger than 360px*/
 }
 
 #howtoplay > * {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-transform: uppercase;
 }
 
@@ -149,20 +150,32 @@ body{
 
 }
 
+
 #howtoplay a{
-  grid-template-columns: 1fr 1fr;
   background: #b3151a;
-  /* background-image: url("/assets/images/howtothumb.jpg");
-  background-size: contain;
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position: center; */
-  margin: 7%;
+  margin: 10vw 7% 10vw 7%;
   text-decoration: none;
   color: #fffce1;
   font-size: clamp(3rem, 4vw, 4.5vw);
-  border-radius: 5%;
+  border-radius: 10px;
 }
+
+ @media screen and (max-width: 1200px){
+  #howtoplay {
+    grid-template-columns: 1fr;
+}
+ }
+/*
+@media screen and (max-width: 960px) {
+  #howtoplay{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr;
+  }
+  #howtoplay h2{
+    grid-row: span 1;
+    grid-column: span 1;
+    }
+} */
 
 /*
  #intro {
