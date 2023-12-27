@@ -41,6 +41,7 @@
 
 
 body{
+  height: 100%;
     background-image: url(/assets/images/background.jpg);
     /* background-attachment: fixed; */
     font-family: Oswald;
@@ -48,6 +49,7 @@ body{
 
   html {
     scroll-behavior: smooth;
+    height: 100%;
   }
 
   /* TOP NAV */
@@ -129,7 +131,7 @@ body{
 
 
 #howtoplay {
-  height: calc(100vh - calc(120px - 1vw));
+  height: calc(100dvh - calc(120px - 1vw));
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
