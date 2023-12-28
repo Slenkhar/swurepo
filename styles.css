@@ -246,6 +246,7 @@ body{
   border-radius: 10px;
 }
 #tryitout a {
+  margin-top: -5px;
   box-shadow: 0 4px 3px -3px #15f2fd;
   font-size: clamp(3rem, 4vw, 4.5vw);
   color: #fffce1;
