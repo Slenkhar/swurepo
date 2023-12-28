@@ -285,7 +285,12 @@ body{
 }
 
 
-
+footer {
+  margin-top: 50px;
+  color: #fffce1;
+  text-align: center;
+  background: rgba(231, 27, 34, 0.3);
+}
 /* MEDIA QUERIES */
 
 
