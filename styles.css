@@ -148,6 +148,7 @@ body{
 
 
 #howtoplay {
+  color: #fffce1;
   height: calc(100dvh - calc(120px - 1vw));
   scroll-margin-top: calc(119px - 1vw);
   display: grid;
@@ -157,12 +158,16 @@ body{
 #howtoplay > * {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  place-items: center;
   text-transform: uppercase;
 }
 
+#howtoplay div {
+  margin: 2%;
+  border-radius: 10px;
+  /* margin: 10vw 7% 10vw 7%; */
+}
 #howtoplay h2{
-  text-align: center;
   font-weight: 900;
   color: #fffce1;
   background-color: #e71b22;
@@ -170,12 +175,30 @@ body{
 }
 
 #howtoplay a{
-  font-weight: 600;
-  margin: 10vw 7% 10vw 7%;
-  text-decoration: none;
-  color: #fffce1;
+
   font-size: clamp(3rem, 4vw, 4.5vw);
-  border-radius: 10px;
+  color: #fffce1;
+  text-shadow: 2px 2px 3px #15f2fd;
+}
+
+@media (hover: hover){
+  #howtoplay a:hover {
+    transform: scale(2);
+    text-shadow: 2px 2px 3px #e71b22;
+  }
+}
+@media (any-pointer: coarse){
+  #howtoplay a:active {
+    transform: scale(1.2);
+    text-shadow: 2px 2px 3px #e71b22;
+  }
+}
+
+#howtoplay p {
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 2px 2px 3px #e71b22;
+  font-size: clamp(3rem, 2vw, 4.5vw);
 }
 
 .read{
