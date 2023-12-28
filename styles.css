@@ -87,10 +87,23 @@ body{
     
 }
 
-.main-nav li:hover{
+@media (hover: hover){
+
+  .main-nav li:hover{
     background-color: #b3151a;
     transform: scale(1.1);
     transform: rotate(5deg);
+}
+}
+@media (any-pointer: coarse){
+
+  .main-nav li:active{
+    background-color: #b3151a;
+    transform: scale(1.1);
+    transform: rotate(5deg);
+    
+}
+
 }
 
 .main-nav a{
@@ -207,10 +220,25 @@ body{
   border-radius: 10px;
 }
 #tryitout a {
+  /* padding: 15px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #1B105B; */
   font-size: clamp(3rem, 4vw, 4.5vw);
-  text-decoration: none;
   color: #fffce1;
   text-shadow: 2px 2px 3px #15f2fd;
+}
+
+@media (hover: hover){
+  #tryitout a:hover {
+    transform: scale(2);
+    text-shadow: 2px 2px 3px #e71b22;
+  }
+}
+@media (any-pointer: coarse){
+  #tryitout a:active {
+    transform: scale(1.2);
+    text-shadow: 2px 2px 3px #e71b22;
+  }
 }
 
 #tryitout p {
