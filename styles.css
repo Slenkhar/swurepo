@@ -43,7 +43,7 @@
 body{
   height: 100%;
     background-image: url(/assets/images/background.jpg);
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     font-family: Oswald;
   }
 
@@ -82,7 +82,7 @@ body{
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 2px;
-    box-shadow: 5px 5px 5px #b3151a;
+    box-shadow: 6px 6px 6px #b3151a;
     text-align: center;
     
 }
@@ -99,7 +99,8 @@ body{
 
 }
 
- /* WELCOME BANNER */
+      /* WELCOME BANNER */
+
 
  #intro {
   padding-top: calc(120px - 1vw);;
@@ -129,11 +130,15 @@ body{
   text-shadow: 2px 2px 3px #15f2fd;
 }
 
+
+      /* HOW TO PLAY */
+
+
 #howtoplay {
   height: calc(100dvh - calc(120px - 1vw));
+  scroll-margin-top: calc(119px - 1vw);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  /* justify-content: center; use if larger than 360px*/
+  grid-template-columns: 1fr 1.5fr 1.5fr;
 }
 
 #howtoplay > * {
@@ -144,15 +149,15 @@ body{
 }
 
 #howtoplay h2{
+  text-align: center;
+  font-weight: 900;
   color: #fffce1;
   background-color: #e71b22;
   font-size: clamp(3rem, 4vw, 4.5vw);
-
 }
 
-
 #howtoplay a{
-  background: #b3151a;
+  font-weight: 600;
   margin: 10vw 7% 10vw 7%;
   text-decoration: none;
   color: #fffce1;
@@ -160,10 +165,84 @@ body{
   border-radius: 10px;
 }
 
+.read{
+  background: #0E063D;
+  text-shadow: 2px 2px 3px #15f2fd;
+}
+
+.watch{
+  background: #1B105B;
+  text-shadow: 2px 2px 5px #e71b22;
+}
+
+
+      /* TRY IT OUT */
+
+
+#tryitout {
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr;
+  height: calc(100dvh - calc(120px - 1vw));
+  scroll-margin-top: calc(119px - 1vw);
+}
+
+#tryitout > * {
+  display: grid;
+  place-items: center;
+}
+#tryitout h2{
+  grid-column: span 3;
+  font-weight: 900;
+  color: #fffce1;
+  background-color: #e71b22;
+  font-size: clamp(3rem, 4vw, 4.5vw);
+  text-transform: uppercase;
+}
+
+
+#tryitout div {
+  margin: 2%;
+  border-radius: 10px;
+}
+#tryitout a {
+  font-size: clamp(3rem, 4vw, 4.5vw);
+  text-decoration: none;
+  color: #fffce1;
+  text-shadow: 2px 2px 3px #15f2fd;
+}
+
+#tryitout p {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 4.5vw);
+  text-transform: uppercase;
+}
+
+.felt, .print{
+  background: #0E063D;
+}
+
+.tts {
+  background: #1B105B;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
  @media screen and (max-width: 1200px){
   #howtoplay {
     grid-template-columns: 1fr;
 }
+  #tryitout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  #tryitout div {
+    grid-column: span 1 / 2;
+  }
  }
 /*
 @media screen and (max-width: 960px) {
