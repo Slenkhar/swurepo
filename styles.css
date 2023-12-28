@@ -22,10 +22,10 @@
   /*
     5. Improve media defaults
   */
-  /* img, picture, video, canvas, svg {
+  img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  } */
+  }
   /*
     6. Remove built-in form typography styles
   */
@@ -291,6 +291,75 @@ footer {
   text-align: center;
   background: rgba(231, 27, 34, 0.3);
 }
+
+
+/* LISTEN IN */
+
+#listen-in{
+  scroll-margin-top: calc(119px - 1vw);
+  min-height: calc(100dvh - calc(119px - 1vw));
+}
+
+#listen-in h2 {
+  display: grid;
+  place-items: center;
+  grid-column: 1/-1;
+  background: #e71b22;
+  color: #fffce1;
+  font-weight: 900;
+  font-size: clamp(3rem, 4vw, 4.5vw);
+  text-transform: uppercase;
+  height: clamp(170px, 47.5vw, 294.48px)
+}
+
+.listen-in {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  color: #fffce1;
+  gap: 20px;
+}
+
+.ytcontainer1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.ytcontainer1 > * {
+  margin: 10px;
+}
+
+/* .listen-in > * {
+  display: grid;
+  place-items: grid;
+} */
+
+/* .listen-in div.ytcontainer1{
+  background: #0E063D;
+} */
+
+.ytcontainer1 div:nth-child(2){
+  background: rgba(21, 242, 253, 0.6);
+  box-shadow: 0 0 15px 5px rgb(21, 242, 253);
+  border-radius: 20px;
+  text-shadow: black 1px 0 10px;
+  font-size: clamp(1rem, 1.1vw, 2vw);
+  margin-bottom: 24px;
+
+}
+
+.listen-in div {
+  text-align: center;
+}
+.listen-in img{
+width: auto;
+height: auto;
+border-radius: 20px;
+box-shadow: 0 0 15px 5px #15f2fd;
+}
+
+
+
 /* MEDIA QUERIES */
 
 
