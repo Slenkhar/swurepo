@@ -184,7 +184,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 3fr;
-  height: calc(100dvh - calc(120px - 1vw));
+  height: calc(100dvh - calc(119px - 1vw));
   scroll-margin-top: calc(119px - 1vw);
 }
 
