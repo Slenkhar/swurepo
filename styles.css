@@ -343,17 +343,16 @@ footer {
   box-shadow: 0 0 15px 5px rgb(21, 242, 253);
   border-radius: 20px;
   text-shadow: black 1px 0 10px;
-  font-size: clamp(1rem, 1.1vw, 2vw);
-  margin-bottom: 24px;
-
+  font-size: clamp(1.02rem, 0.90345rem + 0.518vw, 1.68rem);
+  margin-bottom: 29px;
+  padding: 5px;
 }
 
 .listen-in div {
   text-align: center;
 }
 .listen-in img{
-width: auto;
-height: auto;
+height: 100%;
 border-radius: 20px;
 box-shadow: 0 0 15px 5px #15f2fd;
 }
