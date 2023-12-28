@@ -175,7 +175,8 @@ body{
 }
 
 #howtoplay a{
-
+  border-bottom: 3px solid rgba(255, 252, 225, 0);
+  box-shadow: 0 4px 3px -3px #15f2fd;
   font-size: clamp(3rem, 4vw, 4.5vw);
   color: #fffce1;
   text-shadow: 2px 2px 3px #15f2fd;
@@ -185,12 +186,14 @@ body{
   #howtoplay a:hover {
     transform: scale(2);
     text-shadow: 2px 2px 3px #e71b22;
+    box-shadow: 0 4px 2px -2px #e71b22;
   }
 }
 @media (any-pointer: coarse){
   #howtoplay a:active {
     transform: scale(1.2);
     text-shadow: 2px 2px 3px #e71b22;
+    box-shadow: 0 4px 2px -2px #e71b22;
   }
 }
 
@@ -243,9 +246,7 @@ body{
   border-radius: 10px;
 }
 #tryitout a {
-  /* padding: 15px;
-  border-radius: 50%;
-  box-shadow: 3px 3px 5px #1B105B; */
+  box-shadow: 0 4px 3px -3px #15f2fd;
   font-size: clamp(3rem, 4vw, 4.5vw);
   color: #fffce1;
   text-shadow: 2px 2px 3px #15f2fd;
@@ -255,12 +256,14 @@ body{
   #tryitout a:hover {
     transform: scale(2);
     text-shadow: 2px 2px 3px #e71b22;
+    box-shadow: 0 4px 2px -2px #e71b22;
   }
 }
 @media (any-pointer: coarse){
   #tryitout a:active {
     transform: scale(1.2);
     text-shadow: 2px 2px 3px #e71b22;
+    box-shadow: 0 4px 2px -2px #e71b22;
   }
 }
 
