@@ -64,6 +64,8 @@ body{
 }
 
   /* TOP NAV */
+
+
 .fixednav {
   position: fixed;
   width: 100%;
@@ -93,7 +95,7 @@ body{
     padding: calc(5px + 0.8vw);
     text-transform: lowercase;
     font-family: starjedi;
-    border-radius: 2px;
+    border-radius: 5px;
     box-shadow: 6px 6px 6px #b3151a;
     text-align: center;
     font-size: clamp(0.80em, 1.749vw, 1.2em);
@@ -167,27 +169,18 @@ body{
   height: calc(100dvh - calc(120px - 1vw));
   scroll-margin-top: calc(119px - 1vw);
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr;
   
 }
-
-#howtoplay > * {
-  /* justify-content: space-around; */
-  /* place-items: center; */
-}
-
 #howtoplay div {
   margin: 2%;
   border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  /* margin: 10vw 7% 10vw 7%; */
 }
 #howtoplay h2{
-  /* font-weight: 900; */
   display: grid;
   place-items: center;
   inset: 0;
@@ -223,10 +216,8 @@ body{
 }
 
 #howtoplay p {
-  /* text-align: center; */
   font-weight: 600;
   text-shadow: 2px 2px 3px #e71b22;
-  /* font-size: clamp(3rem, 2vw, 4.5vw); */
   font-size: clamp(2rem, 2vw, 4.5vw);
   text-transform: uppercase;
 }
@@ -260,11 +251,6 @@ body{
 }
 #tryitout h2{
   grid-column: span 3;
-  /* font-weight: 900;
-  color: #fffce1;
-  background-color: #e71b22;
-  font-size: clamp(3rem, 4vw, 4.5vw);
-  text-transform: uppercase; */
   font-family: starjedi;
   color: #fffce1;
   background-color: #e71b22;
@@ -376,7 +362,6 @@ footer {
   font-size: clamp(1.02rem, 0.90345rem + 0.518vw, 1.68rem);
   margin-bottom: 29px;
   padding: 5px;
-  /* width: clamp(150px, 38.889vw, 247px); */
 }
 
 .listen-in div {
@@ -406,66 +391,3 @@ aspect-ratio: 1;
     grid-column: span 1 / 2;
   }
  }
-/*
-@media screen and (max-width: 960px) {
-  #howtoplay{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1.5fr 1.5fr;
-  }
-  #howtoplay h2{
-    grid-row: span 1;
-    grid-column: span 1;
-    }
-} */
-
-/*
- #intro {
-    display: flex;
-    height: calc(100vh - 10vw);
-    /* margin-top: 10vw; 
-  
-  }
-
-#intro p, h1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 5%;
-}
-
-#intro p {
-  font-size: 30px;
-  min-width: 200px;
-  background-color: #0E063D;
-  text-transform: uppercase;
-  color: whitesmoke;
-}
-#intro h1 {
-  flex:;
-  font-size: clamp(2.2vw, 2.8vw, 3vw);
-  background-color: #1B105B;
-  text-transform: uppercase;
-  color: #FBA509;
-  text-align: center;
-  line-height: 100px;
-  min-width: 400px;
-}
-#intro hr{
-  border: 5px solid red;
-}
-
-
-
-
-  #howtoplay {
-    background-color: green;
-  }
-
-
-  @media screen and (max-width: 760px) {
-    
-    #intro{
-      flex-wrap: wrap;
-    }
-  } */
