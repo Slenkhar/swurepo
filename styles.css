@@ -341,7 +341,7 @@ footer {
   font-size: clamp(2.4rem, 3.1vw, 4.5vw);
   text-transform: lowercase;
   font-family: starjedi;
-  height: clamp(170px, 40vw, 294.48px)
+  height: 22.8181dvh;
 }
 
 .listen-in {
