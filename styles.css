@@ -44,7 +44,11 @@ body{
   height: 100%;
     background-image: url(/assets/images/background.jpg);
     background-attachment: fixed;
-    font-family: Oswald;
+    /* font-family: Oswald; */
+    @font-face {
+      font-family: starjedi;
+      src: url(https://starwarsresources.com/assets/star-jedi-font/StarJedi-DGRW/);
+    }
   }
 
   html {
