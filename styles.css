@@ -46,13 +46,14 @@
     font-family: "starjedi";
     src: url(Starjedi.ttf);
 }
-body{
-  height: 100%;
-    background-image: url(/assets/images/background.jpg);
-    background-attachment: fixed;
-    font-family: Oswald;
 
+body{
+    background-image: url(/assets/images/backgroundstars.png); 
+    backdrop-filter: blur(0.05px);
+    background-size: calc(900px - 5vw);
+    font-family: Oswald;
   }
+
 
   html {
     scroll-behavior: smooth;
@@ -179,6 +180,8 @@ body{
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  /* position: relative;
+  z-index: -1; */
 }
 #howtoplay h2{
   display: grid;
@@ -198,6 +201,8 @@ body{
   font-size: clamp(3rem, 4vw, 4.5vw);
   color: #fffce1;
   text-shadow: 2px 2px 3px #15f2fd;
+  /* position: absolute;
+  bottom: 25%; */
 }
 
 @media (hover: hover){
@@ -220,6 +225,8 @@ body{
   text-shadow: 2px 2px 3px #e71b22;
   font-size: clamp(2rem, 2vw, 4.5vw);
   text-transform: uppercase;
+  /* position: absolute;
+  top: 25%; */
 }
 
 .read{
