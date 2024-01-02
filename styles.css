@@ -149,6 +149,8 @@ body{
   text-transform: lowercase;
   font-family: starjedi;
   text-shadow: 2px 2px 5px #e71b22;
+  -webkit-text-stroke: 0.0005px rgba(231, 27, 34, 0.1);
+
 }
 
 #intro p {
