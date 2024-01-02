@@ -49,7 +49,6 @@
 
 body{
     background-image: url(/assets/images/backgroundstars.png); 
-    backdrop-filter: blur(0.4px);
     background-size: calc(900px - 5vw);
     font-family: Oswald;
   }
