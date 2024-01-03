@@ -130,7 +130,7 @@ body{
   padding-top: calc(120px - 1vw);;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  height: 100svh;
+  height: 100lvh;
 }
 #intro > * {
     display: grid;
