@@ -48,7 +48,8 @@
 }
 
 body{
-    background-image: url(/assets/images/backgroundstars.png); 
+    background-image: url(/assets/images/backgroundstars.png);
+    background-attachment: fixed;
     background-size: calc(900px - 5vw);
     font-family: Oswald;
   }
