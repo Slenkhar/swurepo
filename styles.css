@@ -372,6 +372,7 @@ footer {
   font-size: clamp(1.02rem, 0.90345rem + 1vw, 2rem);
   /* padding: 5px; */
   margin: 10px;
+  text-align: justify;
 }
 .ytcontainer {
   display: grid;
