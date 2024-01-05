@@ -159,6 +159,7 @@ body{
 }
 
 
+
       /* HOW TO PLAY */
 
 
@@ -168,11 +169,24 @@ body{
   scroll-margin-top: calc(119px - 1vw);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
   
 }
+
+.preamble {
+  display: grid;
+  align-items: center;
+  background: rgba(21, 242, 253, 0.6);
+  box-shadow: 0 0 15px 5px rgb(21, 242, 253);
+  border-radius: 20px;
+  text-shadow: black 1px 0 10px;
+  font-size: clamp(1.02rem, 0.90345rem + 0.518vw, 1.68rem);
+  padding: 5px;
+  margin: 10px;
+  grid-row: 2 / 4;
+}
 #howtoplay div {
-  margin: 2%;
+  margin: 10px;
   border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr;
@@ -194,7 +208,7 @@ body{
 
 #howtoplay a{
   border-bottom: 3px solid rgba(255, 252, 225, 0);
-  box-shadow: 0 4px 3px -3px #15f2fd;
+  /* box-shadow: 0 4px 3px -3px #15f2fd; */
   font-size: clamp(3rem, 4vw, 4.5vw);
   color: #fffce1;
   text-shadow: 2px 2px 3px #15f2fd;
@@ -206,18 +220,18 @@ body{
   #howtoplay a:hover {
     transform: scale(2);
     text-shadow: 2px 2px 3px #e71b22;
-    box-shadow: 0 4px 2px -2px #e71b22;
+    /* box-shadow: 0 4px 2px -2px #e71b22; */
   }
 }
 @media (any-pointer: coarse){
   #howtoplay a:active {
     transform: scale(1.2);
     text-shadow: 2px 2px 3px #e71b22;
-    box-shadow: 0 4px 2px -2px #e71b22;
+    /* box-shadow: 0 4px 2px -2px #e71b22; */
   }
 }
 
-#howtoplay p {
+#howtoplay h3 {
   font-weight: 600;
   text-shadow: 2px 2px 3px #e71b22;
   font-size: clamp(2rem, 2vw, 4.5vw);
@@ -268,7 +282,7 @@ body{
 }
 #tryitout a {
   margin-bottom: 10px;
-  box-shadow: 0 4px 3px -3px #15f2fd;
+  /* box-shadow: 0 4px 3px -3px #15f2fd; */
   font-size: clamp(3rem, 4vw, 4.5vw);
   color: #fffce1;
   text-shadow: 2px 2px 3px #15f2fd;
@@ -278,14 +292,14 @@ body{
   #tryitout a:hover {
     transform: scale(2);
     text-shadow: 2px 2px 3px #e71b22;
-    box-shadow: 0 4px 2px -2px #e71b22;
+    /* box-shadow: 0 4px 2px -2px #e71b22; */
   }
 }
 @media (any-pointer: coarse){
   #tryitout a:active {
     transform: scale(1.2);
     text-shadow: 2px 2px 3px #e71b22;
-    box-shadow: 0 4px 2px -2px #e71b22;
+    /* box-shadow: 0 4px 2px -2px #e71b22; */
   }
 }
 
@@ -384,8 +398,13 @@ aspect-ratio: 1;
 
  @media screen and (max-width: 1200px){
   #howtoplay {
-    grid-template-columns: 1fr;
-    grid-template-rows: .67fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+} 
+
+.preamble {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
 }
   #tryitout {
     grid-template-columns: 1fr;
