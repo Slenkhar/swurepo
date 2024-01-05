@@ -180,7 +180,7 @@ body{
   box-shadow: 0 0 15px 5px rgb(21, 242, 253);
   border-radius: 20px;
   text-shadow: black 1px 0 10px;
-  font-size: clamp(1.02rem, 0.90345rem + 0.518vw, 1.68rem);
+  font-size: clamp(1.02rem, 0.90345rem + 1vw, 2rem);
   padding: 5px 6vw 5px 6vw;
   margin: 10px;
   text-align: justify;
