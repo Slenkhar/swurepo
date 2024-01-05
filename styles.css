@@ -181,7 +181,7 @@ body{
   box-shadow: 0 0 15px 5px rgb(21, 242, 253);
   border-radius: 20px;
   text-shadow: black 1px 0 10px;
-  font-size: clamp(1.02rem, 0.90345rem + 1vw, 2rem);
+  font-size: clamp(1.02rem, 0.5rem + 2vw, 3rem);
   padding: 5px 6vw 5px 6vw;
   margin: 10px;
   text-align: justify;
@@ -370,6 +370,7 @@ footer {
   box-shadow: 0 0 15px 5px rgb(21, 242, 253);
   border-radius: 20px;
   text-shadow: black 1px 0 10px;
+  /* font-size: clamp(1.02rem, 0.5rem + 2vw, 3rem); */
   font-size: clamp(1.02rem, 0.90345rem + 1vw, 2rem);
   /* padding: 5px; */
   margin: 10px;
