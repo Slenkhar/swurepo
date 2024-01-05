@@ -453,7 +453,9 @@ aspect-ratio: 1;
 }
 
 
-
+.ogimage {
+  display: none;
+}
 
 /* MEDIA QUERIES */
 
