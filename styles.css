@@ -376,6 +376,10 @@ body{
   align-items: center;
 }
 
+.description a, .description a:visited {
+  color: #fffce1;
+  text-shadow: #15f2fd 1px 0 10px;
+}
 .section-container div {
   text-align: center;
 }
