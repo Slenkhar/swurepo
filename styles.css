@@ -74,7 +74,6 @@ body{
     align-items: center;
     justify-content: flex-end;
     background-color: #e71b22;
-    backdrop-filter: blur(5px);
     height: calc(120px - 1vw);
   }
 .main-nav ul {
@@ -83,41 +82,61 @@ body{
     flex-wrap: wrap;
     list-style: none;
     justify-content: flex-end;
-    padding: 5px
+    padding: 10px;
     
 }
 
 .main-nav li {
-    margin: 0.6vw;
-    padding: calc(5px + 0.8vw);
-    text-transform: lowercase;
-    font-family: starjedi;
-    border-radius: 5px;
-    box-shadow: 6px 6px 6px #b3151a;
-    text-align: center;
-    font-size: clamp(0.80em, 1.749vw, 1.2em);
+  display: grid;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+  font-family: starjedi;
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px #b3151a;
+  text-align: center;
+  font-size: clamp(0.80em, 1.749vw, 1.2em);
     
 }
 
 .main-nav a{
+  display: inline-block;
+  margin: 0;
+  padding: calc(10px + 0.2vw) calc(5px + 1vw);  
   text-decoration: none;
   color: #fffce1;
 
 }
 
-@media (hover: hover){
+   /* SHARE BUTTON */
 
+#shareButton{
+  margin: 0;
+  padding: calc(10px + 0.2vw) calc(5px + 1vw);
+  cursor: pointer;
+  color: #fffce1;
+  border: none;
+  border-radius: 5px;
+  background: #e71b22;
+}
+
+
+@media (hover: hover){
+  #shareButton:hover{
+    background-color: #b3151a;
+  }
   .main-nav li:hover{
     background-color: #b3151a;
-    transform: scale(1.1);
     transform: rotate(5deg);
 }
 }
 @media (any-pointer: coarse){
-
-  .main-nav li:active{
+   #shareButton:active{
     background-color: #b3151a;
-    transform: scale(1.1);
+   }
+   .main-nav li:active{
+    background-color: #b3151a;
     transform: rotate(5deg);
     
 }
@@ -424,9 +443,6 @@ aspect-ratio: 1;
   margin: 10px;
   text-align: justify;
 }
-
-
-
 
 
 
