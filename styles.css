@@ -199,8 +199,8 @@ body{
   box-shadow: 0 0 15px 5px rgb(21, 242, 253);
   border-radius: 20px;
   text-shadow: black 1px 0 10px;
-  font-size: clamp(1.02rem, 0.5rem + 2vw, 3rem);
-  padding: 5px 6vw 5px 6vw;
+  font-size: clamp(1.02rem, 0.5rem + 2vw, 2.5rem);
+  padding: 5px 6vw;
   margin: 10px;
   text-align: justify;
   grid-row: 2 / 4;
@@ -226,14 +226,14 @@ body{
 
 #howtoplay a{
   border-bottom: 3px solid rgba(255, 252, 225, 0);
-  font-size: clamp(3rem, 4vw, 4.5vw);
+  font-size: clamp(3rem, 6.95vw, 10rem);
   color: #fffce1;
   text-shadow: 2px 2px 3px #15f2fd;
 }
 
 @media (hover: hover){
   #howtoplay a:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     text-shadow: 2px 2px 3px #e71b22;
   }
 }
@@ -247,7 +247,8 @@ body{
 #howtoplay h3 {
   font-weight: 600;
   text-shadow: 2px 2px 3px #e71b22;
-  font-size: clamp(2rem, 2vw, 4.5vw);
+  /* font-size: clamp(2rem, 2vw, 4.5vw); */
+  font-size: clamp(1.2rem, 0.5rem + 2.5vw, 2.5rem);
   text-transform: uppercase;
 }
 
@@ -293,14 +294,14 @@ body{
 }
 #tryitout a {
   margin-bottom: 10px;
-  font-size: clamp(3rem, 4vw, 4.5vw);
+  font-size: clamp(3rem, 6.95vw, 10rem);
   color: #fffce1;
   text-shadow: 2px 2px 3px #15f2fd;
 }
 
 @media (hover: hover){
   #tryitout a:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     text-shadow: 2px 2px 3px #e71b22;
   }
 }
@@ -315,8 +316,9 @@ body{
   text-align: center;
   font-weight: 600;
   text-shadow: 2px 2px 3px #e71b22;
-  font-size: clamp(1.2rem, 2vw, 4.5vw);
+  font-size: clamp(1.2rem, 0.5rem + 2.5vw, 2.5rem);
   text-transform: uppercase;
+  padding: 0 4%;
 }
 
 .felt, .print{
@@ -403,7 +405,7 @@ aspect-ratio: 1;
   display: grid;
   align-items: center;
   min-height: 120px;
-  padding: 5px 7vw 5px 7vw;
+  padding: 4vw 10vw;
   color: #fffce1;
   display: grid;
   align-items: center;
@@ -411,8 +413,8 @@ aspect-ratio: 1;
   box-shadow: 0 0 15px 5px rgb(21, 242, 253);
   border-radius: 20px;
   text-shadow: black 1px 0 10px;
-  font-size: clamp(1.02rem, 0.90345rem + 1vw, 2rem);
-  margin: 10px;
+  font-size: clamp(1.02rem, 0.5rem + 2vw, 2.5rem);
+  margin: 15px;
   text-align: justify;
 }
 
