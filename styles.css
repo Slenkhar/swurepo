@@ -351,7 +351,6 @@ body{
   text-transform: lowercase;
   font-family: soloist;
   grid-column: span 2;
-  text-align: left;
   margin: 0 0 0 2%;
 }
 
@@ -365,15 +364,15 @@ body{
   margin-left: 20px;
   display: grid;
   align-items: center;
+  
 }
+
 
 .description a, .description a:visited {
   color: #fffce1;
   text-shadow: #15f2fd 1px 0 10px;
 }
-.section-container div {
-  text-align: center;
-}
+
 .section-container img{
 border-radius: 20px;
 box-shadow: 0 0 15px 5px #15f2fd;
