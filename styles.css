@@ -57,7 +57,7 @@ body{
   html {
     scroll-behavior: smooth;
     height: 100%;
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; */
   }
 
 
@@ -150,7 +150,7 @@ body{
 
 
  #intro {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   padding-top: calc(120px - 1vw);;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -185,7 +185,7 @@ body{
 
 
 #howtoplay {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   color: #fffce1;
   height: calc(100dvh - calc(120px - 1vw));
   scroll-margin-top: calc(119px - 1vw);
@@ -270,7 +270,7 @@ body{
 
 
 #tryitout {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   color: #fffce1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -336,11 +336,11 @@ body{
 
 /* LISTEN IN - LEARN MORE - HAVE A CHAT */
 
-#listen-in, #more, #chat{
+/* #listen-in, #more, #chat{
   scroll-snap-align: start;
   scroll-snap-stop: always;
+} */
 
-}
 .section-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 32em), 1fr));
