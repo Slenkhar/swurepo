@@ -57,7 +57,7 @@ body{
   html {
     scroll-behavior: smooth;
     height: 100%;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
   }
 
 
@@ -336,10 +336,11 @@ body{
 
 /* LISTEN IN - LEARN MORE - HAVE A CHAT */
 
-/* #listen-in, #more, #chat{
+#listen-in, #more, #chat{
   scroll-snap-align: start;
   scroll-snap-stop: always;
-} */
+
+}
 .section-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 32em), 1fr));
