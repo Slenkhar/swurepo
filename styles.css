@@ -336,10 +336,10 @@ body{
 
 /* LISTEN IN - LEARN MORE - HAVE A CHAT */
 
-#listen-in, #more, #chat{
+/* #listen-in, #more, #chat{
   scroll-snap-align: start;
   scroll-snap-stop: always;
-}
+} */
 .section-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 32em), 1fr));
