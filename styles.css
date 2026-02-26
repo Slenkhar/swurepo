@@ -43,7 +43,9 @@
 
 @font-face {
     font-family: "soloist";
-    src: url(Soloist.ttf);
+    src: url(fonts/Soloist.woff2);
+    src: url(fonts/Soloist.woff);
+
 }
 
 body{
