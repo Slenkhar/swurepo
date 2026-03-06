@@ -113,6 +113,16 @@ body{
 }
 
 
+section:target > h2 {
+  animation: textGlow 2s ease-in-out forwards;
+}
+
+@keyframes textGlow {
+  0%   { text-shadow: 0 0 0px cyan; }
+  50%  { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
+  100% { text-shadow: 0 0 0px cyan; }
+}
+
    /* SHARE BUTTON */
 
 
