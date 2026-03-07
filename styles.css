@@ -48,13 +48,19 @@
 
 }
 
-body{
-    background-image: url(/assets/images/backgroundstars.png);
-    background-attachment: fixed;
-    background-size: 900px;
-    background-repeat: repeat;
-    font-family: Oswald;
-  }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url(/assets/images/backgroundstars.png);
+  background-size: 900px;
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+body {
+  font-family: Oswald;
+}
 
 
   html {
