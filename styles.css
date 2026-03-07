@@ -49,15 +49,31 @@
 }
 
 html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Oswald;
+  position: relative;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url(/assets/images/backgroundstars.png);
   background-repeat: repeat;
   background-size: 900px;
-  background-attachment: fixed;
+  background-position: top left;
+  z-index: -1;
 }
 
 body {
   margin: 0;
-  font-family: Oswald;
+  min-height: 100vh;
+  position: relative;
 }
 
 html {
