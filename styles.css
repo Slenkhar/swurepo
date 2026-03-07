@@ -166,7 +166,7 @@ section:target > h2 {
   padding-top: calc(120px - 1vw);;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  height: 100dvh;
+  height: 100svh;
 }
 #intro > * {
     display: grid;
@@ -199,7 +199,7 @@ section:target > h2 {
 #howtoplay {
   /* scroll-snap-align: start; */
   color: #fffce1;
-  height: calc(100dvh - calc(120px - 1vw));
+  height: calc(100svh - calc(120px - 1vw));
   scroll-margin-top: calc(119px - 1vw);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -287,7 +287,7 @@ section:target > h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.75fr 3fr;
-  height: calc(100dvh - calc(119px - 1vw));
+  height: calc(100svh - calc(119px - 1vw));
   scroll-margin-top: calc(119px - 1vw);
 }
 
@@ -409,7 +409,7 @@ aspect-ratio: 1;
 
 #more, #chat, #listen-in{
   scroll-margin-top: calc(119px - 1vw);
-  min-height: calc(100dvh - calc(119px - 1vw));
+  min-height: calc(100svh - calc(119px - 1vw));
 }
 
 #more h2, #chat h2, #listen-in h2 {
@@ -422,7 +422,7 @@ aspect-ratio: 1;
   font-size: clamp(2.4rem, 3.1vw, 4.5vw);
   text-transform: lowercase;
   font-family: soloist;
-  height: 17.1dvh;
+  height: 17.1svh;
 }
 
 .moreintro, .chatintro, .listenintro{
