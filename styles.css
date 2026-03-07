@@ -51,7 +51,8 @@
 body{
     background-image: url(/assets/images/backgroundstars.png);
     background-attachment: fixed;
-    background-size: calc(900px - 5vw);
+    background-size: 900px;
+    background-repeat: repeat;
     font-family: Oswald;
   }
 
