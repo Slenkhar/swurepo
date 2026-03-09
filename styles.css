@@ -56,6 +56,8 @@ html {
   position: relative;
 }
 
+
+ /* FIXED BACKGROUND */
 html::before {
   content: "";
   position: fixed;
@@ -67,7 +69,22 @@ html::before {
   background-repeat: repeat;
   background-size: 900px;
   background-position: top left;
-  z-index: -1;
+  z-index: -2;
+}
+
+ /* ABSOLUTE BACKGROUND */
+body::before {
+  content: "";
+  position: absolute;  /* scrolls with content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* match the body height */
+  min-height: 100vh; /* ensures at least viewport height */
+  background-image: url(/assets/images/starsFront.png);
+  background-repeat: repeat;
+  background-size: 500px; /* adjust to fit look */
+  z-index: -1;        /* above the fixed background but below content */
 }
 
 body {
@@ -175,7 +192,6 @@ section:target > h2 {
 
 
  #intro {
-  /* scroll-snap-align: start; */
   padding-top: calc(120px - 1vw);;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -210,7 +226,6 @@ section:target > h2 {
 
 
 #howtoplay {
-  /* scroll-snap-align: start; */
   color: #fffce1;
   height: calc(100svh - calc(120px - 1vw));
   scroll-margin-top: calc(119px - 1vw);
@@ -275,7 +290,6 @@ section:target > h2 {
 #howtoplay h3 {
   font-weight: 600;
   text-shadow: 2px 2px 3px #e71b22;
-  /* font-size: clamp(2rem, 2vw, 4.5vw); */
   font-size: clamp(1.2rem, 0.5rem + 2.5vw, 2.5rem);
   text-transform: uppercase;
 }
@@ -295,7 +309,6 @@ section:target > h2 {
 
 
 #tryitout {
-  /* scroll-snap-align: start; */
   color: #fffce1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -358,13 +371,7 @@ section:target > h2 {
   background-color: rgba(27, 16, 91, 0.8);
 }
 
-
 /* LISTEN IN - LEARN MORE - HAVE A CHAT */
-
-/* #listen-in, #more, #chat{
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-} */
 
 .section-container {
   display: grid;
@@ -399,7 +406,6 @@ section:target > h2 {
 
 .nested-content .description p {
   text-shadow: black 1px 0 10px;
-  /* font-size: clamp(1.02rem, 0.90345rem + 0.518vw, 1.68rem); */
   font-size: clamp(1.04rem, 0.5rem + 2.5vw, 1.65rem);
   padding: 0 4%;
   align-self: center;
@@ -455,20 +461,14 @@ aspect-ratio: 1;
   text-align: justify;
 }
 
-
      /* OGIMAGE HIDE */
-
 
 .ogimage {
   display: none;
 }
 
+    /* FOOTER */
 
-
-
-
-
-     /* FOOTER */
 footer {
   margin-top: 50px;
   color: #fffce1;
@@ -484,10 +484,7 @@ footer a {
 
 
 
-
-
 /* MEDIA QUERIES */
-
 
  @media screen and (max-width: 1200px){
   #howtoplay {
